@@ -58,16 +58,16 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Home",
+    "title": "Home - Welcome!",
     "section": "",
-    "text": "I’m building a math and personal website with Obsidian, Quarto, and GitHub Pages.\n\n\n\nAbout\nNotes\nPosts"
+    "text": "I’m building a math and personal website with Obsidian, Quarto, and GitHub Pages."
   },
   {
     "objectID": "index.html#sections",
     "href": "index.html#sections",
-    "title": "Home",
-    "section": "",
-    "text": "About\nNotes\nPosts"
+    "title": "Home - Welcome!",
+    "section": "Sections",
+    "text": "Sections\n\nAbout\nNotes\nPosts"
   },
   {
     "objectID": "posts/index.html",
@@ -88,21 +88,21 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Write your short bio here.\n\n\n\nMathematics\nMachine learning\nPersonal writing\n\n\n\n\nAdd email / GitHub / other links here."
+    "text": "I am a math student"
   },
   {
     "objectID": "about.html#interests",
     "href": "about.html#interests",
     "title": "About",
-    "section": "",
-    "text": "Mathematics\nMachine learning\nPersonal writing"
+    "section": "Interests",
+    "text": "Interests\n\nMathematics\nMachine learning\nPersonal writing"
   },
   {
     "objectID": "about.html#contact",
     "href": "about.html#contact",
     "title": "About",
-    "section": "",
-    "text": "Add email / GitHub / other links here."
+    "section": "Contact",
+    "text": "Contact\nAdd email / GitHub / other links here."
   },
   {
     "objectID": "notes/index.html",

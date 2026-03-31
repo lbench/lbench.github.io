@@ -1,10 +1,10 @@
 ---
 title: "About"
+number-sections: false
 ---
 
-# About
 
-Write your short bio here.
+I am a math student
 
 ## Interests
 
