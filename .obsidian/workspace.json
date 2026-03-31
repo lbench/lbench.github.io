@@ -11,14 +11,12 @@
             "id": "bc1b62c2b8d29db1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
+                "file": "assets/hoff-art.png"
               },
-              "icon": "lucide-file",
-              "title": "README"
+              "icon": "lucide-image",
+              "title": "hoff-art"
             }
           }
         ]
@@ -94,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "assets/hoff-art.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +102,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for README"
+              "title": "Backlinks for hoff-art"
             }
           },
           {
@@ -113,12 +111,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "assets/hoff-art.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from README"
+              "title": "Outgoing links from hoff-art"
             }
           },
           {
@@ -156,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "assets/hoff-art.png",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of README"
+              "title": "Outline of hoff-art"
             }
           }
         ]
@@ -184,8 +182,9 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "7ffd4f98f9720883",
+  "active": "bc1b62c2b8d29db1",
   "lastOpenFiles": [
+    "README.md",
     "assets/hoff-art.png.sb-7a47cb45-i36jz1",
     "assets/hoff-art.png",
     "assets/Gemini_Generated_Image_gg1firgg1firgg1f.png",
@@ -198,7 +197,6 @@
     "posts/index.html",
     "posts/index_files/mediabag",
     "posts/index_files",
-    "notes/quotient-vector-spaces.html",
     "_templates/post.md",
     "_templates/math-note.md"
   ]
