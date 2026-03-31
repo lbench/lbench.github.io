@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Liam Bench"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: notes/index.qmd
+        text: Notes
+      - href: posts/index.qmd
+        text: Posts
+    right:
+      - icon: github
+        href: https://github.com/lbench/site
+
+  search: true
+
+format:
+  html:
+    theme: cosmo
+    css: styles.scss
+    toc: true
+    number-sections: true
+    html-math-method: mathjax

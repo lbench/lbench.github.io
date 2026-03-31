@@ -1,0 +1,13 @@
+---
+title: "Home"
+---
+
+# Welcome
+
+I’m building a math and personal website with Obsidian, Quarto, and GitHub Pages.
+
+## Sections
+
+- [About](about.qmd)
+- [Notes](notes/index.qmd)
+- [Posts](posts/index.qmd)

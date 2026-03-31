@@ -1,0 +1,20 @@
+---
+title: "Quotient vector spaces"
+description: "A first sample math note"
+categories: [math, linear algebra]
+---
+
+# Quotient vector spaces
+
+Let $V$ be a vector space and $W \leq V$ a subspace.
+
+Then the quotient $V/W$ is the set of cosets
+\[
+v + W.
+\]
+
+## Example
+
+Take \(V = \mathbb{R}^2\) and \(W = \operatorname{span}(e_1)\).
+
+Then \(V/W\) is one-dimensional.

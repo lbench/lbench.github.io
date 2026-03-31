@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "notes/index.html",
+    "href": "notes/index.html",
+    "title": "Notes",
+    "section": "",
+    "text": "Quotient vector spaces\n\n\nA first sample math note\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Write your short bio here.\n\n\n\nMathematics\nMachine learning\nPersonal writing\n\n\n\n\nAdd email / GitHub / other links here."
+  },
+  {
+    "objectID": "about.html#interests",
+    "href": "about.html#interests",
+    "title": "About",
+    "section": "",
+    "text": "Mathematics\nMachine learning\nPersonal writing"
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About",
+    "section": "",
+    "text": "Add email / GitHub / other links here."
+  },
+  {
+    "objectID": "posts/first-post.html",
+    "href": "posts/first-post.html",
+    "title": "First post",
+    "section": "",
+    "text": "1 First post\nThis is the first post on the site."
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "Posts",
+    "section": "",
+    "text": "First post\n\n\n\n\n\n\n\n\nMar 31, 2026\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "I’m building a math and personal website with Obsidian, Quarto, and GitHub Pages.\n\n\n\nAbout\nNotes\nPosts"
+  },
+  {
+    "objectID": "index.html#sections",
+    "href": "index.html#sections",
+    "title": "Home",
+    "section": "",
+    "text": "About\nNotes\nPosts"
+  },
+  {
+    "objectID": "notes/quotient-vector-spaces.html",
+    "href": "notes/quotient-vector-spaces.html",
+    "title": "Quotient vector spaces",
+    "section": "",
+    "text": "Let \\(V\\) be a vector space and \\(W \\leq V\\) a subspace.\nThen the quotient \\(V/W\\) is the set of cosets [ v + W. ]\n\n\nTake (V = ^2) and (W = (e_1)).\nThen (V/W) is one-dimensional."
+  },
+  {
+    "objectID": "notes/quotient-vector-spaces.html#example",
+    "href": "notes/quotient-vector-spaces.html#example",
+    "title": "Quotient vector spaces",
+    "section": "",
+    "text": "Take (V = ^2) and (W = (e_1)).\nThen (V/W) is one-dimensional."
+  }
+]

@@ -1,0 +1,17 @@
+---
+title: "About"
+---
+
+# About
+
+Write your short bio here.
+
+## Interests
+
+- Mathematics
+- Machine learning
+- Personal writing
+
+## Contact
+
+Add email / GitHub / other links here.
