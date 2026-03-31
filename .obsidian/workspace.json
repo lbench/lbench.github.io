@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "018bbecb618c9568",
+        "id": "688c2213ce9f78e5",
         "type": "tabs",
         "children": [
           {
-            "id": "bc1b62c2b8d29db1",
+            "id": "8ac368bb422d947f",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "assets/hoff-art.png"
+                "file": "notes/Test.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "hoff-art"
+              "icon": "lucide-file",
+              "title": "Test"
             }
           }
         ]
@@ -92,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "assets/hoff-art.png",
+                "file": "notes/Test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for hoff-art"
+              "title": "Backlinks for Test"
             }
           },
           {
@@ -111,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "assets/hoff-art.png",
+                "file": "notes/Test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from hoff-art"
+              "title": "Outgoing links from Test"
             }
           },
           {
@@ -154,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "assets/hoff-art.png",
+                "file": "notes/Test.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of hoff-art"
+              "title": "Outline of Test"
             }
           }
         ]
@@ -182,7 +184,7 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "7ffd4f98f9720883",
+  "active": "8ac368bb422d947f",
   "lastOpenFiles": [
     "docs/listings.json",
     "docs/search.json",
@@ -190,16 +192,18 @@
     "docs/assets",
     "docs/styles.scss",
     "docs/site_libs/quarto-html/tabsets/tabsets.js",
-    "docs/site_libs/quarto-nav/quarto-nav.js",
-    "docs/site_libs/quarto-nav/headroom.min.js",
     "docs/site_libs/quarto-search/quarto-search.js",
     "docs/site_libs/quarto-search/fuse.min.js",
     "docs/site_libs/quarto-search/autocomplete.umd.js",
-    "docs/site_libs/quarto-html/tippy.umd.min.js",
-    "README.md",
-    "assets/hoff-art.png",
-    "assets/Gemini_Generated_Image_gg1firgg1firgg1f.png",
+    "docs/site_libs/quarto-nav/quarto-nav.js",
+    "docs/site_libs/quarto-nav/headroom.min.js",
+    "docs/site_libs/quarto-listing/quarto-listing.js",
+    "_templates/math-note.md",
     "_templates/post.md",
-    "_templates/math-note.md"
+    "notes/Test.md",
+    "notes/note.qmd.md",
+    "assets/hoff-art.png",
+    "README.md",
+    "assets/Gemini_Generated_Image_gg1firgg1firgg1f.png"
   ]
 }

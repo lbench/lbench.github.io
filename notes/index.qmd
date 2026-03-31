@@ -1,7 +1,10 @@
 ---
 title: "Notes"
 listing:
-  contents: "*.qmd"
+  contents:
+    - "*.md"
+    - "*.qmd"
+    - "!index.qmd"
   sort: "title"
   type: default
 ---

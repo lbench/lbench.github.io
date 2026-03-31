@@ -2,9 +2,7 @@
 title: "Home"
 ---
 
-::: {.column-margin}
-![A margin image](assets/hoff-art.png){fig-alt="Abstract geometric artwork" width="100%"}
-:::
+
 
 # Welcome
 
@@ -15,3 +13,6 @@ I’m building a math and personal website with Obsidian, Quarto, and GitHub Pag
 - [About](about.qmd)
 - [Notes](notes/index.qmd)
 - [Posts](posts/index.qmd)
+
+
+![](assets/hoff-art.png){width="100%"}
