@@ -3,7 +3,7 @@ title: "Home"
 ---
 
 ::: {.column-margin}
-![](assets/hoff-art.png.png){fig-alt="Abstract geometric artwork" width="100%"}
+![](assets/hoff-art.png){fig-alt="Abstract geometric artwork" width="100%"}
 :::
 
 # Welcome
