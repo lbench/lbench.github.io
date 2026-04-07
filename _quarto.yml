@@ -16,7 +16,7 @@ website:
         text: Posts
     right:
       - icon: github
-        href: https://github.com/lbench/site
+        href: https://github.com/lbench/lbench.github.io
 
   search: true
 
