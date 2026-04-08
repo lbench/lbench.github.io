@@ -18,7 +18,7 @@ In sum, I interested in the following themes and areas, especially their interfa
 1. Topology, geometry, and moduli
 2. Equivalence, invariance, and functoriality
 3. Distance, approximation, and stability
-4. Deformation, perturbation, and singularity
+4. Deformation, variation, and singularity
 5. Dynamics, evolution, and qualitative theory
 6. Information, inference, and complexity
 
