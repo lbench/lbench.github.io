@@ -27,7 +27,7 @@ format:
     theme:
       light: flatly
       dark: darkly
-    css: styles.scss
+    css: styles.css
     toc: true
     number-sections: true
     html-math-method: mathjax
