@@ -42,7 +42,7 @@ I enjoy math about shapes, change, and prediction. Or more specifically
 <div class="homepage-art-frame">
   <img
     id="homepage-art-image"
-    src="assets/hoff-art.png"
+    src="assets/hoff-art.webp"
     alt="Abstract geometric mosaic artwork"
     width="1376"
     height="768"
@@ -52,12 +52,12 @@ I enjoy math about shapes, change, and prediction. Or more specifically
 <script>
 (() => {
   const artworkFiles = [
-    "assets/hoff-art.png",
-    "assets/art-2.png",
-    "assets/art-3.png",
-    "assets/art-4.png",
-    "assets/art-5.png"
-  ];
+  "assets/hoff-art.webp",
+  "assets/art-2.webp",
+  "assets/art-3.webp",
+  "assets/art-4.webp",
+  "assets/art-5.webp"
+];
   const image = document.getElementById("homepage-art-image");
   if (!image) return;
 
