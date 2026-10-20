@@ -302,22 +302,12 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#for-math-audience" id="toc-for-math-audience" class="nav-link active" data-scroll-target="#for-math-audience">Mathematical audience</a></li>
-  <li><a href="#for-lay-audience" id="toc-for-lay-audience" class="nav-link" data-scroll-target="#for-lay-audience">Lay audience</a></li>
-  <li><a href="#sections" id="toc-sections" class="nav-link" data-scroll-target="#sections">Sections</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -327,7 +317,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -339,6 +329,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="homepage-copy">
 <p>I’m building a math and personal website with Obsidian, Quarto, and GitHub Pages.</p>
 <p>I am a math student interested in geometry, topology, dynamical systems, and machine learning.</p>
 <p>Here is an explanation of my interests <a href="#for-math-audience">for a mathematical audience</a> or <a href="#for-lay-audience">for a lay audience</a>.</p>
@@ -370,25 +361,26 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="./notes/index.html">Notes</a></li>
 <li><a href="./posts/index.html">Posts</a></li>
 </ul>
-<!-- On each page load, choose one available artwork at random.
-     Add four images at assets/art-2.png through assets/art-5.png. -->
+</section>
+</div>
+<!-- Desktop: portrait crop at left. Mobile: full landscape image below text. -->
 <div class="homepage-art-frame">
-<p><img id="homepage-art-image" src="assets/hoff-art.webp" alt="Abstract geometric mosaic artwork" width="1376" height="768"></p>
+<p><img id="homepage-art-image" src="assets/hoff-art.webp" alt="Abstract geometric mosaic artwork" width="1672" height="941"></p>
 </div>
 <script>
 (() => {
   const artworkFiles = [
-  "assets/hoff-art.webp",
-  "assets/art-2.webp",
-  "assets/art-3.webp",
-  "assets/art-4.webp",
-  "assets/art-5.webp"
-];
+    "assets/hoff-art.webp",
+    "assets/art-2.webp",
+    "assets/art-3.webp",
+    "assets/art-4.webp",
+    "assets/art-5.webp"
+  ];
+
   const image = document.getElementById("homepage-art-image");
   if (!image) return;
 
-  // Precheck image files so missing images are never selected.
-  // Keep the frame blank until the one selected image is ready.
+  // Preserve the existing behavior: one random artwork per page load.
   image.style.visibility = "hidden";
   const checks = artworkFiles.map(src => new Promise(resolve => {
     const probe = new Image();
@@ -400,21 +392,16 @@ ul.task-list li input[type="checkbox"] {
   Promise.all(checks).then(results => {
     const available = results.filter(Boolean);
     if (available.length) {
-      const choice = available[Math.floor(Math.random() * available.length)];
-      image.src = choice;
+      image.src = available[Math.floor(Math.random() * available.length)];
     }
     image.style.visibility = "visible";
   }).catch(() => {
-    // Fall back to the original artwork if image checking fails.
     image.style.visibility = "visible";
   });
-
-  // Deliberately no interval, animation or subsequent image changes.
 })();
 </script>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

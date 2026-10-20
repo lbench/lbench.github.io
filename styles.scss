@@ -6,16 +6,89 @@ body {
   font-weight: 600;
 }
 
-/* Static artwork: one random image per page load; no animation. */
-.homepage-art-frame {
+/*
+  Homepage only.  Other pages retain their standard Quarto layout.
+
+  Desktop artwork:
+    - stays close to the left edge, even on a wide monitor
+    - grows with the viewport, within sensible minimum/maximum widths
+    - keeps a portrait frame and crops without distortion
+*/
+@media (min-width: 901px) {
+  #quarto-document-content:has(> .homepage-copy) {
+    --homepage-edge: clamp(16px, 2vw, 40px);
+
+    /* Escape any centered Quarto content width on very wide screens. */
+    width: calc(100vw - var(--homepage-edge) - var(--homepage-edge));
+    max-width: none;
+    margin-left: calc(50% - 50vw + var(--homepage-edge));
+    margin-right: 0;
+    padding-inline: 0;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: clamp(220px, 24vw, 410px) minmax(0, 780px);
+    grid-template-rows: auto 1fr;
+    column-gap: clamp(24px, 3vw, 56px);
+    justify-content: start;
+    align-items: start;
+  }
+
+  #quarto-document-content:has(> .homepage-copy) > #title-block-header {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+  }
+
+  .homepage-copy {
+    grid-column: 2;
+    grid-row: 2;
+    min-width: 0;
+  }
+
+  .homepage-art-frame {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    align-self: start;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    overflow: hidden;
+  }
+}
+
+/* Quarto/Pandoc may wrap an HTML image in a paragraph element. */
+.homepage-art-frame > p {
   width: 100%;
-  aspect-ratio: 1672 / 941;
-  overflow: hidden;
+  height: 100%;
+  margin: 0;
 }
 
 .homepage-art-frame img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Narrow screens: text first, uncropped landscape artwork at bottom. */
+@media (max-width: 900px) {
+  #quarto-document-content:has(> .homepage-copy) {
+    display: block;
+    width: min(100%, 780px);
+    margin-inline: auto;
+    padding-inline: 1rem;
+    box-sizing: border-box;
+  }
+
+  .homepage-art-frame {
+    width: 100%;
+    aspect-ratio: 1672 / 941;
+    margin-top: 2rem;
+    overflow: hidden;
+  }
+
+  .homepage-art-frame img {
+    object-fit: contain;
+  }
 }

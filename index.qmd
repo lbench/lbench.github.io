@@ -1,12 +1,15 @@
 ---
 title: "Home - Welcome!"
 number-sections: false
+toc: false
+page-layout: full
 ---
+
+::: {.homepage-copy}
 
 I’m building a math and personal website with Obsidian, Quarto, and GitHub Pages.
 
-I am a math student interested in geometry, topology, dynamical systems, and machine learning. 
-
+I am a math student interested in geometry, topology, dynamical systems, and machine learning.
 
 Here is an explanation of my interests
 [for a mathematical audience](#for-math-audience) or [for a lay audience](#for-lay-audience).
@@ -36,33 +39,33 @@ I enjoy math about shapes, change, and prediction. Or more specifically
 - [Notes](notes/index.qmd)
 - [Posts](posts/index.qmd)
 
+:::
 
-<!-- On each page load, choose one available artwork at random.
-     Add four images at assets/art-2.png through assets/art-5.png. -->
+<!-- Desktop: portrait crop at left. Mobile: full landscape image below text. -->
 <div class="homepage-art-frame">
   <img
     id="homepage-art-image"
     src="assets/hoff-art.webp"
     alt="Abstract geometric mosaic artwork"
-    width="1376"
-    height="768"
+    width="1672"
+    height="941"
   >
 </div>
 
 <script>
 (() => {
   const artworkFiles = [
-  "assets/hoff-art.webp",
-  "assets/art-2.webp",
-  "assets/art-3.webp",
-  "assets/art-4.webp",
-  "assets/art-5.webp"
-];
+    "assets/hoff-art.webp",
+    "assets/art-2.webp",
+    "assets/art-3.webp",
+    "assets/art-4.webp",
+    "assets/art-5.webp"
+  ];
+
   const image = document.getElementById("homepage-art-image");
   if (!image) return;
 
-  // Precheck image files so missing images are never selected.
-  // Keep the frame blank until the one selected image is ready.
+  // Preserve the existing behavior: one random artwork per page load.
   image.style.visibility = "hidden";
   const checks = artworkFiles.map(src => new Promise(resolve => {
     const probe = new Image();
@@ -74,15 +77,11 @@ I enjoy math about shapes, change, and prediction. Or more specifically
   Promise.all(checks).then(results => {
     const available = results.filter(Boolean);
     if (available.length) {
-      const choice = available[Math.floor(Math.random() * available.length)];
-      image.src = choice;
+      image.src = available[Math.floor(Math.random() * available.length)];
     }
     image.style.visibility = "visible";
   }).catch(() => {
-    // Fall back to the original artwork if image checking fails.
     image.style.visibility = "visible";
   });
-
-  // Deliberately no interval, animation or subsequent image changes.
 })();
 </script>
