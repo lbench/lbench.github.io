@@ -37,4 +37,52 @@ I enjoy math about shapes, change, and prediction. Or more specifically
 - [Posts](posts/index.qmd)
 
 
-![](assets/hoff-art.png){width="100%"}
+<!-- On each page load, choose one available artwork at random.
+     Add four images at assets/art-2.png through assets/art-5.png. -->
+<div class="homepage-art-frame">
+  <img
+    id="homepage-art-image"
+    src="assets/hoff-art.png"
+    alt="Abstract geometric mosaic artwork"
+    width="1376"
+    height="768"
+  >
+</div>
+
+<script>
+(() => {
+  const artworkFiles = [
+    "assets/hoff-art.png",
+    "assets/art-2.png",
+    "assets/art-3.png",
+    "assets/art-4.png",
+    "assets/art-5.png"
+  ];
+  const image = document.getElementById("homepage-art-image");
+  if (!image) return;
+
+  // Precheck image files so missing images are never selected.
+  // Keep the frame blank until the one selected image is ready.
+  image.style.visibility = "hidden";
+  const checks = artworkFiles.map(src => new Promise(resolve => {
+    const probe = new Image();
+    probe.onload = () => resolve(src);
+    probe.onerror = () => resolve(null);
+    probe.src = src;
+  }));
+
+  Promise.all(checks).then(results => {
+    const available = results.filter(Boolean);
+    if (available.length) {
+      const choice = available[Math.floor(Math.random() * available.length)];
+      image.src = choice;
+    }
+    image.style.visibility = "visible";
+  }).catch(() => {
+    // Fall back to the original artwork if image checking fails.
+    image.style.visibility = "visible";
+  });
+
+  // Deliberately no interval, animation or subsequent image changes.
+})();
+</script>
